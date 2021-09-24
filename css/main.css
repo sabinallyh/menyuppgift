@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    background-color: DodgerBlue;
+  }
+
+  .intro{
+      background-color: white;
+      width: 200px;
+  }
+
+/* sabina css */
+.meny{
+    display: flex;
+    flex-direction: row;
+    background-color: DodgerBlue;
+  }
+
+.mat  {
+    background-color: #f1f1f1;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 20px;
+    font-size: 15px;
+  }
+/* sabina css */
