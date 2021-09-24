@@ -5,7 +5,7 @@
 main {
     display: flex;
     flex-direction: column;
-    background-color: DodgerBlue;
+    background-color: seashell;
   }
 
   .intro{
@@ -28,4 +28,54 @@ main {
     line-height: 20px;
     font-size: 15px;
   }
+
+.container-fluid{
+  background: aquamarine;
+}
+
+.bootstrapdiv{
+  background-color: white;
+}
 /* sabina css */
+
+/* ellinor css*/
+
+
+/* ellinor css*/
+
+
+/* thumandi css*/
+
+
+.firstpage-container{
+  background-color: none;
+  background-image: url(https://cdn.pixabay.com/photo/2016/08/25/02/57/japans-1618622_1280.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100vw;
+  min-height: 90vh;
+}
+
+.firstpage-container h1{
+  text-align: center;
+}
+
+.firstpage-container p{
+text-align: center;
+}
+
+.icon-field{
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  
+}
+.icon{
+  width: 10vw;
+  align-items: center;
+}
+
+
+
+/* thumandi css*/
