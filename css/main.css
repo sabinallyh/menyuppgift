@@ -1,11 +1,14 @@
 * {
   box-sizing: border-box;
+  font-family: futura;
+  color: rgb(85, 85, 85);
 }
 
 main {
     display: flex;
     flex-direction: column;
-    background-color: seashell;
+    background-color: rgb(255, 255, 255) !important;
+    padding: 4%;
   }
 
   .intro{
@@ -13,11 +16,55 @@ main {
       width: 200px;
   }
 
+
+/* navigationsmenyn alla sidor */
+
+nav {
+  display: block !important;
+  float: none !important;
+    text-align: center !important;
+    padding: 5% !important;
+    font-size: 18px !important;
+    font-weight: lighter !important;
+    text-transform: uppercase !important;
+    color: rgb(85, 85, 85) !important;
+}
+
+a {
+  padding: 3% !important;
+  text-decoration: none !important;
+  color: rgb(85, 85, 85) !important;
+}
+
+a:hover {
+  color: grey !important;
+}
+
+a.active {
+  text-decoration: underline !important;
+}
+
+/* footer alla sidor */
+
+footer {
+  margin-top: auto;
+  margin-bottom: 3px;
+  width: 100%;
+  text-align: center;
+  
+}
+
+.footerText {
+  font-size: x-small;
+  padding: 0%;
+}
+
+
+
 /* sabina css */
 .meny{
     display: flex;
     flex-direction: row;
-    background-color: DodgerBlue;
   }
 
 .mat  {
@@ -36,18 +83,23 @@ main {
 .bootstrapdiv{
   background-color: white;
 }
+
+.itemone{
+  background-image:url(.../img/menu/1.jpg);
+}
+
 /* sabina css */
 
-/* ellinor css*/
 
 
 /* ellinor css*/
-
 
 /* thumandi css*/
 
 
 .firstpage-container{
+  display: flex;
+  justify-content: center;
   background-color: none;
   background-image: url(https://cdn.pixabay.com/photo/2016/08/25/02/57/japans-1618622_1280.jpg);
   background-repeat: no-repeat;
@@ -58,10 +110,12 @@ main {
 
 .firstpage-container h1{
   text-align: center;
+  color: black;
 }
 
 .firstpage-container p{
-text-align: center;
+  text-align: center;
+  color: black;
 }
 
 .icon-field{
