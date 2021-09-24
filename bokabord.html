@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
     <title>Vår restaurang - Boka bord</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
 </head>
 <body>
     <header>
@@ -19,7 +20,29 @@
             <h1>Restaurangens namn</h1>
             <img src="" alt="Bild på restaurangens bästa rätt">
         </div>
+<form class="contactform" name="contactform" method="post" action="#">
+        <fieldset>
+            <legend>Boka bord</legend>
 
+            <label for="name"><i class="material-icons" style="font-size:16px">
+                    sentiment_very_satisfied
+                </i></label>
+            <input type="text" id="name" name="name" placeholder="Your name.."><br />
+            <label for="company"><i class="material-icons" style="font-size:16px">
+                    business
+                </i></label>
+            <input type="text" id="company" name="company" placeholder="Company.."><br />
+            <label for="email"><i class="material-icons" style="font-size:16px">
+                    mail_outline
+                </i></label>
+            <input type="text" id="email" name="email" placeholder="Email address.."><br />
+            <label for="message"><i class="material-icons" style="font-size:16px">
+                    chat_bubble_outline
+                </i></label>
+            <input type="text" id="message" name="message" placeholder="What's on your mind?"><br /><br />
+            <button>Send</button>
+        </fieldset>
+    </form>
     </main>
     <footer>
 
