@@ -18,7 +18,8 @@ main {
 
 
 /* navigationsmenyn alla sidor */
-
+/*Här visste vi inte riktigt hur vi skulle göra för att få properties att gälla på bootstrap sidan annat än att använda !important
+trots att det antagligen finns ett annat sätt och inte behöver vara en last resort, vi visste bara ej hur*/
 nav {
   display: block !important;
   float: none !important;
@@ -31,9 +32,9 @@ nav {
 }
 
 a {
-  padding: 3% !important;
-  text-decoration: none !important;
-  color: rgb(85, 85, 85) !important;
+  padding: 3%;
+  text-decoration: none;
+  color: rgb(85, 85, 85);
 }
 
 a:hover {
@@ -55,7 +56,7 @@ footer {
 }
 
 .footerText {
-  font-size: x-small;
+  font-size: small;
   padding: 0%;
 }
 
@@ -77,11 +78,17 @@ footer {
   }
 
 .container-fluid{
-  background: aquamarine;
+
+}
+
+.menucategory{
+  text-align: center;
+  padding-top: 3rem;
 }
 
 .bootstrapdiv{
   background-color: white;
+  text-align: center;
 }
 
 .itemone{
@@ -93,6 +100,65 @@ footer {
 
 
 /* ellinor css*/
+
+form {
+  padding: 2%;
+}
+
+fieldset {
+  padding: 4%;
+}
+
+label {
+  font-size: 18px;
+}
+
+placeholder {
+  font-size: 18px;
+}
+
+select {
+  font-size: 14px;
+}
+
+input[type="text"] {
+    width: 50%;
+    color: #e3b79a;
+    font-size: 18px;
+  }
+  
+  input[type="tel"] {
+    width: 50%;
+    color: #e3b79a;
+    font-size: 18px;
+  }
+
+  input[type="text"]:focus {
+    border-style: 1px #e3b79a;
+  }
+  
+  input[type="tel"]:focus {
+    border-style: 1px #e3b79a;
+  }
+
+  i.material-icons {
+    width: 18px;
+  }
+
+  #boka {
+    border-style: none;
+    font-size: 20px;
+    padding: 1%;
+  }
+
+  #boka:hoover {
+    background: gray;
+  }
+
+.avbokningsinfo {
+  font-size: small;
+}
+
 
 /* thumandi css*/
 
@@ -108,14 +174,37 @@ footer {
   min-height: 90vh;
 }
 
-.firstpage-container h1{
-  text-align: center;
-  color: black;
-}
-
+.firstpage-container h1,
 .firstpage-container p{
   text-align: center;
-  color: black;
+}
+
+.firstpage-container h1 span{
+  background-color: rgb(0, 0, 0, 0.7);
+  color: white;
+  padding: 10px 15px 10px 15px;
+}
+
+.firstpage-container p span{
+  background-color: rgba(220, 0, 41, 0.7);
+  color: white;
+  padding: 2px 10px 2px 10px;
+}
+
+.firstpage-container a{
+  color: white;
+  padding: 0px;
+  text-decoration: underline;
+}
+
+.firstpage-container a:hover{
+  background-color: rgb(0, 0, 0, 0.7);
+  text-decoration: none;
+  padding: 2px 0px 2px 0px;
+}
+
+.firstpage-container a.active{
+  text-decoration: none;
 }
 
 .icon-field{
@@ -130,6 +219,20 @@ footer {
   align-items: center;
 }
 
+
+.navigation-class a {
+  padding: 3%;
+  text-decoration: none;
+  color: rgb(85, 85, 85);
+}
+
+.navigation-clas a:hover {
+  color: grey;
+}
+
+.navigation-clas a.active {
+  text-decoration: underline;
+}
 
 
 /* thumandi css*/

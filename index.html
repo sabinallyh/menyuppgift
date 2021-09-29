@@ -12,20 +12,21 @@
         <div class="icon-field">
             <img src="https://www.sushiyama.se/wp-content/uploads/2019/01/sushiyama-logo.png" class="icon" alt="Sushi Yama icon">
         </div>
-        <nav>
+        <nav class="navigation-class">
+            <!-- här var vi tvungna att göra en klass för innehållet i menyn som kallas för navlink då boostrap stylesheetet overridade vår a tag -->
             <a href="index.html" class="active">STARTSIDA</a>
-            <a href="matmeny.html">MENY</a>
-            <a href="bokabord.html">BOKA BORD</a>
+            <a href="matmeny.html" class="">MENY</a>
+            <a href="bokabord.html" class="navlink">BOKA BORD</a>
         </nav>
     </header>
     <main class="firstpage-container">
         <div>
-                <h1>FLAGSHIP RESTAURANT</h1>
-                <p>Äntligen har vår Sushi Yama Flagship Restaurant slagit upp dörrarna!
+                <h1><span>FLAGSHIP RESTAURANT</span></h1>
+                <p><span>Äntligen har vår Sushi Yama Flagship Restaurant slagit upp dörrarna!
                     Här kan du uppleva sushi av högsta kvalitet, i äkta japansk anda. 
                     Vi har även ett stort utbud av traditionella japanska drycker och tilltugg. 
                     Välkommen att kolla in <a href="matmeny.html"> vår meny</a> eller <a href="bokabord.html">boka bord</a>!
-                </p>
+                </span></p>
         </div>
     </main>
     <footer>

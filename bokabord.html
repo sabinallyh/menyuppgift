@@ -15,65 +15,61 @@
         <div class="icon-field">
             <img src="https://www.sushiyama.se/wp-content/uploads/2019/01/sushiyama-logo.png" class="icon" alt="Sushi Yama icon">
         </div>
-        <nav>
+        <nav class="navigation-class">
+            <!-- här var vi tvungna att göra en klass för innehållet i menyn som kallas för navlink då boostrap stylesheetet overridade vår a tag -->
             <a href="index.html">STARTSIDA</a>
             <a href="matmeny.html">MENY</a>
             <a href="bokabord.html" class="active">BOKA BORD</a>
         </nav>
     </header>
     <main>
-        <div>
-            <h1>NÅN BILD HÄR KANSKE?</h1>
-        </div>
+        
 <form class="contactform" name="contactform" method="post" action="#">
         <fieldset>
-            <legend>Boka bord</legend>
+            <legend align="center">Boka bord</legend>
             <label for="dateBox">Välj datum:</label>
-            <input type="datetime-local" id="dateBox" name="dateBox"><br /><br />
+            <input type="datetime-local" id="dateBox" name="dateBox">
 
             <label for="timeBox">Välj tid:</label>
-            <input type="time" id="timeBox" name="timeBox"><br /><br />
-
-
-            <label for="cars">Antal personer:</label>
+            <input type="time" id="timeBox" name="timeBox">
+            <br /><br />
+            <label for="antal">Antal:</label>
 <select id="antal" name="antal">
-  <option value="1">1</option>
-  <option value="2">2</option>
-  <option value="3">3</option>
-  <option value="4">4</option>
-  <option value="5">5</option>
-  <option value="6">6</option>
-  <option value="7">7</option>
-  <option value="8">8</option>
+  <option value="1">1 person</option>
+  <option value="2">2 personer</option>
+  <option value="3">3 personer</option>
+  <option value="4">4 personer</option>
+  <option value="5">5 personer</option>
+  <option value="6">6 personer</option>
+  <option value="7">7 personer</option>
+  <option value="8">8 personer</option>
   <option value="fler">Fler än 8 (kontakta restaurangen)</option>
 </select>
 <br /><br />
 
-<h3>Kontaktuppgifter:</h3>
-            <label for="name"><i class="material-icons" style="font-size:16px">
+<p>Kontaktuppgifter:</p>
+            <label for="name"><i class="material-icons" style="font-size:18px">
                     sentiment_very_satisfied
                 </i></label>
             <input type="text" id="name" name="name" placeholder="Ditt namn.."><br/><br/>
-          
-            <label for="email"><i class="material-icons" style="font-size:16px">
-                    mail_outline
-                </i></label>
-            <input type="text" id="email" name="email" placeholder="Mailadress.."><br />
-            <label for="message"><i class="material-icons" style="font-size:16px">
-                    chat_bubble_outline
-                </i></label>
-                <input type="tel" id="tele" name="tele" pattern="[0-9]{3}-[0-9]{7}" placeholder="Telefonnummer.."><br />
-                
-           
-            <label for="message"><i class="material-icons" style="font-size:16px">
-                chat_bubble_outline
-            </i></label>
-    <input type="text" id="message" name="message" placeholder="Allergier, övriga kommentarer.."><br /><br />
-<br><br>
-            <button>Boka</button>
-            <br>
 
-    <p>*Blablabla liten text om att avboka senast 24h innan avsatt tid och blabalbal</p><br>
+            <label for="email"><i class="material-icons" style="font-size:18px">mail_outline</i></label>
+            <input type="text" id="email" name="email" placeholder="Mailadress.."><br /><br>
+
+            <label for="phone"><i class="material-icons" style="font-size:18px">phone_outline</i></label>
+                <input type="tel" id="tel" name="tel" pattern="[0-9]{3}-[0-9]{7}" placeholder="Telefonnummer.."><br /><br>
+                
+            <label for="message"><i class="material-icons" style="font-size:18px">chat_bubble_outline</i></label>
+    <input type="text" id="message" name="message" placeholder="Allergier, övriga kommentarer.."><br /><br />
+<br>
+            <button id=boka>Boka</button>
+            <br><br>
+
+    <p class=avbokningsinfo>Är ni fler än 8 personer, vänligen ring 08-000 00 00 eller maila till: hello@sushiyama.se. 
+        <br> <br> För sällskap på 8 personer eller fler måste avbokning ske senast tre dagar för utförandets datum för att undgå debitering. Sker avbokning efter detta debiteras 350:- per bokad gäst. Antalet kan justeras kostnadsfritt fram till två dygn innan ankomsttid.
+        
+        <br> <br>
+        Vi är en kontantfri restaurang. Vi accepterar kortbetalning samt swish.</p><br>
         </fieldset>
     </form>
     </main>
