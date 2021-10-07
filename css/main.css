@@ -174,10 +174,6 @@ input[type="text"] {
   min-height: 90vh;
 }
 
-h3{
-    text-align: center !important;
-}
-
 .firstpage-container h1,
 .firstpage-container p{
   text-align: center;
