@@ -175,7 +175,7 @@ input[type="text"] {
 }
 
 h3{
-    text-align: center;
+    text-align: center !important;
 }
 
 .firstpage-container h1,
